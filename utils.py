@@ -4,6 +4,8 @@ import subprocess
 from random import randint
 
 # Download video
+
+
 def download_video(url: str, folder_to_download: str):
     yt = YouTube(url)
 
@@ -63,6 +65,6 @@ def download_playlist(url: str, folder_to_download: str, download_option=1):
 
             playlist_video.download(output_path=output_folder)
             convert_mp4_to_mp3(output_folder, video_title)
-            
+
             print(f'Video {count_videos} has been downloaded!')
             count_videos += 1

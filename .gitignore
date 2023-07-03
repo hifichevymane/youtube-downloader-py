@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Autopep8 vs code extension
+.vscode
+
 # C extensions
 *.so
 
