@@ -11,7 +11,7 @@ def download_video(url: str, folder_to_download: str):
 
     video = yt.streams.get_highest_resolution()
 
-    video_title = yt.title.replace('/', '+')
+    video_title = f'youtube-downloader-py_{randint(1, 100000)}'
     output_folder = os.path.join(folder_to_download, video_title)
 
     if not os.path.exists(output_folder):
